@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: streamingapp-config
+  namespace: streamingapp
+data:
+  CLIENT_URLS: http://streamingapp-frontend
+  AWS_REGION: __AWS_REGION__
+  AWS_CDN_URL: ""
+  STREAMING_PUBLIC_URL: http://streamingapp-frontend
+  REACT_APP_AUTH_API_URL: http://streamingapp-frontend/api
+  REACT_APP_STREAMING_API_URL: http://streamingapp-frontend/api
+  REACT_APP_STREAMING_PUBLIC_URL: http://streamingapp-frontend
+  REACT_APP_ADMIN_API_URL: http://streamingapp-frontend/api/admin
+  REACT_APP_CHAT_API_URL: http://streamingapp-frontend/api/chat
+  REACT_APP_CHAT_SOCKET_URL: http://streamingapp-frontend
